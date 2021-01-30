@@ -1,7 +1,8 @@
 # RfidLion-v0
 This is a fake rfid based badge reader to Lenel OnGuard system.  
 Created by ShannonLee to test the Tailgating that is a new feature coming soon to UmboCV!  
-The hardware and software were then be refined into SHENEL-1 by @mattwang44.
+The hardware and software were then be refined into SHENEL-1 by @mattwang44.  
+**(source code is not open, because it is one of my intern projects at UmboCV.)**
 ```
 LionKing 	Basic, only rfid feature, no http/https request would be sent
 LionKingBeta 	Demo, sending http request to generate a tweet (twitter)
