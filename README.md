@@ -58,10 +58,10 @@ https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library or use manage 
 <img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0566.png" width="1000">
   
 ## The part that may need tp be modified in future
-Change these fields if you do not use umbo wifi.
+Change these fields to your wifi.
 ```c
-const char* ssid = "RUMBO25";
-const char* password = "jumbolicious";
+const char* ssid = "-";
+const char* password = "-";
 ```
 You can modify the POST and postDate fields to fit the other https requests you want to send in the future.  
 ```c
