@@ -1,6 +1,7 @@
-# RfidLion aka. Shannonel
+# RfidLion-v0
 This is a fake rfid based badge reader to Lenel OnGuard system.  
 Created by ShannonLee to test the Tailgating that is a new feature coming soon to UmboCV!  
+The hardware and software are then be refined into SHENEL-1 by @mattwang44.
 ```
 LionKing 	Basic, only rfid feature, no http/https request would be sent
 LionKingBeta 	Demo, sending http request to generate a tweet (twitter)
@@ -11,9 +12,9 @@ LionKingTailgating 	HTTPver2, sending http request to Andy's aws server(with pub
 ```
 Our aim is to send a https post request to end point server when users swipe thier badge(rfid card).  
 In this program(LionKingPlus) we use slack webhook api as a demo, if someone swipes his badge, our device would send a https post request to url which is given by slack webhook api and then you could see your cardUID is showed on the slack messenge.  
-Demo video: https://drive.google.com/a/umbocv.com/file/d/1XidyUxKajNtnB9tgHcX-8Wce-7YJCIQd/view?usp=sharing
+Demo video: https://youtu.be/BVlqO0EteXA  
 
-<img src="https://github.com/UmboCV/ItsyRoost/blob/dev/Testplans/shannonlee/RfidLion/doc/IMG_0567.jpg" width="420"> <img src="https://github.com/UmboCV/ItsyRoost/blob/dev/Testplans/shannonlee/RfidLion/doc/IMG_0568.png" width="420">
+<img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0567.jpg" width="420"> <img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0568.png" width="420">
   
 ## Material
 We choose the most commonest and cheapest modules to complete this project.   
@@ -38,8 +39,8 @@ The total budget is less than 400 NTD!
 
 
 ## Wiring
-<img src="https://github.com/UmboCV/ItsyRoost/blob/dev/Testplans/shannonlee/RfidLion/doc/IMG_0565.jpg" width="600">
-<img src="https://github.com/UmboCV/ItsyRoost/blob/dev/Testplans/shannonlee/RfidLion/doc/IMG_0564.png" width="400">
+<img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0565.jpg" width="600">
+<img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0564.png" width="400">
 
 ## Library
 Here is the libraries that we have used.  
@@ -54,7 +55,7 @@ https://github.com/esp8266/Arduino
 https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library or use manage lirbraries in ArduinoIDE to add  
   
 ## Pipeline
-<img src="https://github.com/UmboCV/ItsyRoost/blob/dev/Testplans/shannonlee/RfidLion/doc/IMG_0566.png" width="1000">
+<img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0566.png" width="1000">
   
 ## The part that may need tp be modified in future
 Change these fields if you do not use umbo wifi.
@@ -103,4 +104,5 @@ https://www.evernote.com/shard/s315/sh/dd4e8b73-447f-4a97-8f34-b9d5b4655b4e/5618
 Https request:  
 https://www.evernote.com/shard/s315/sh/9dffc236-a8bb-41ca-a17d-78c6f8d45ab4/f6fa5e0db28d59c5b1e13d946bdaceea  
 
-  
+- SHENEL-1
+<img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/SHENEL-1.jpg" width="200"> 
