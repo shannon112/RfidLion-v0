@@ -57,6 +57,19 @@ https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library or use manage 
   
 ## Pipeline
 <img src="https://raw.githubusercontent.com/shannon112/RfidLion-v0/main/doc/IMG_0566.png" width="1000">
+
+```c
+void loop() {
+  turnOffScreen(start_display_time); //lcd
+  if ( ! mfrc522.PICC_IsNewCardPresent()) return;// Look for new cards
+  if ( ! mfrc522.PICC_ReadCardSerial()) return;// Select one of the cards
+  String UID = dump_byte_array(mfrc522.uid.uidByte, mfrc522.uid.size);
+  start_display_time=reaction(UID); //lcd, led and breeze
+  postSlackMessage(UID);
+  turnOffNotice(); //led and breeze
+  last_https_complete_time=millis();
+}
+```
   
 ## The part that may need tp be modified in future
 Change these fields to your wifi.
